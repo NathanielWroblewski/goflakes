@@ -1,0 +1,8 @@
+version: '3'
+services:
+  goflakes:
+    build: .
+    working_dir: "/src"
+    command: go build -o goflakes main.go
+    volumes:
+      - .:/src
